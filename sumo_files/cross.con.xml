@@ -1,0 +1,17 @@
+<connections>
+    <connection from="E1" to="J1W" fromLane="0" toLane="0"/>
+    <connection from="E1" to="J1N" fromLane="0" toLane="0"/>
+    <connection from="E1" to="J1S" fromLane="0" toLane="0"/>
+    
+    <connection from="N1" to="J1S" fromLane="0" toLane="0"/>
+    <connection from="N1" to="J1E" fromLane="0" toLane="0"/>
+    <connection from="N1" to="J1W" fromLane="0" toLane="0"/>
+    
+    <connection from="S1" to="J1N" fromLane="0" toLane="0"/>
+    <connection from="S1" to="J1E" fromLane="0" toLane="0"/>
+    <connection from="S1" to="J1W" fromLane="0" toLane="0"/>
+    
+    <connection from="W1" to="J1E" fromLane="0" toLane="0"/>
+    <connection from="W1" to="J1S" fromLane="0" toLane="0"/>
+    <connection from="W1" to="J1N" fromLane="0" toLane="0"/>
+</connections>
