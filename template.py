@@ -8,12 +8,12 @@ list_of_files = [
     "sumo_files/cross.net.xml",
     "sumo_files/cross.rou.xml",
     "sumo_files/cross.sumocfg",
-    "models/",
     "config.py",
     "environment.py",
     "agent.py",
     "train.py",
     "evaluate.py",
+    "evaluate_untrained.py",
     "tensorflow_gpu_test.ipynb",
     "visualization.py"
 ]

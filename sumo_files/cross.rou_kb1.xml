@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.89" color="1,1,0"/>
+    <vType id="truck" accel="1.0" decel="3.0" sigma="0.5" length="15" maxSpeed="11.11" color="0,1,0"/>
+    <vType id="motorcycle" accel="3.0" decel="4.0" sigma="0.5" length="2.5" maxSpeed="16.67" color="1,0,0"/>
+
+    <!-- Routes -->
+    <route id="route_EW" edges="E1 J1W"/>
+    <route id="route_WE" edges="W1 J1E"/>
+    <route id="route_NS" edges="N1 J1S"/>
+    <route id="route_SN" edges="S1 J1N"/>
+
+    <route id="route_E_turn_left" edges="E1 J1N"/>
+    <route id="route_E_turn_right" edges="E1 J1S"/>
+    <route id="route_W_turn_left" edges="W1 J1S"/>
+    <route id="route_W_turn_right" edges="W1 J1N"/>
+    <route id="route_N_turn_left" edges="N1 J1E"/>
+    <route id="route_N_turn_right" edges="N1 J1W"/>
+    <route id="route_S_turn_left" edges="S1 J1W"/>
+    <route id="route_S_turn_right" edges="S1 J1E"/>
+
+    <!--  E1 (Đông → Tây), tổng 2056 xe/h  -->
+    <flow id="E1_straight_car" type="car" route="route_EW" begin="0" end="3600" vehsPerHour="381"/>
+    <flow id="E1_left_car" type="car" route="route_E_turn_left" begin="0" end="3600" vehsPerHour="381"/>
+    <flow id="E1_right_car" type="car" route="route_E_turn_right" begin="0" end="3600" vehsPerHour="381"/>
+    <flow id="E1_straight_truck" type="truck" route="route_EW" begin="0" end="3600" vehsPerHour="56"/>
+    <flow id="E1_left_truck" type="truck" route="route_E_turn_left" begin="0" end="3600" vehsPerHour="56"/>
+    <flow id="E1_right_truck" type="truck" route="route_E_turn_right" begin="0" end="3600" vehsPerHour="56"/>
+    <flow id="E1_straight_motor" type="motorcycle" route="route_EW" begin="0" end="3600" vehsPerHour="248"/>
+    <flow id="E1_left_motor" type="motorcycle" route="route_E_turn_left" begin="0" end="3600" vehsPerHour="248"/>
+    <flow id="E1_right_motor" type="motorcycle" route="route_E_turn_right" begin="0" end="3600" vehsPerHour="248"/>
+
+    <!--  W1 (Tây → Đông), tổng 1028 xe/h  -->
+    <flow id="W1_straight_car" type="car" route="route_WE" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="W1_left_car" type="car" route="route_W_turn_left" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="W1_right_car" type="car" route="route_W_turn_right" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="W1_straight_truck" type="truck" route="route_WE" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="W1_left_truck" type="truck" route="route_W_turn_left" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="W1_right_truck" type="truck" route="route_W_turn_right" begin="0" end="3600" vehsPerHour="35"/>
+    <flow id="W1_straight_motor" type="motorcycle" route="route_WE" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="W1_left_motor" type="motorcycle" route="route_W_turn_left" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="W1_right_motor" type="motorcycle" route="route_W_turn_right" begin="0" end="3600" vehsPerHour="124"/>
+
+    <!--  N1 (Bắc → Nam), tổng 1028 xe/h  -->
+    <flow id="N1_straight_car" type="car" route="route_NS" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="N1_left_car" type="car" route="route_N_turn_left" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="N1_right_car" type="car" route="route_N_turn_right" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="N1_straight_truck" type="truck" route="route_NS" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="N1_left_truck" type="truck" route="route_N_turn_left" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="N1_right_truck" type="truck" route="route_N_turn_right" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="N1_straight_motor" type="motorcycle" route="route_NS" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="N1_left_motor" type="motorcycle" route="route_N_turn_left" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="N1_right_motor" type="motorcycle" route="route_N_turn_right" begin="0" end="3600" vehsPerHour="124"/>
+
+    <!--  S1 (Nam → Bắc), tổng 1028 xe/h  -->
+    <flow id="S1_straight_car" type="car" route="route_SN" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="S1_left_car" type="car" route="route_S_turn_left" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="S1_right_car" type="car" route="route_S_turn_right" begin="0" end="3600" vehsPerHour="190"/>
+    <flow id="S1_straight_truck" type="truck" route="route_SN" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="S1_left_truck" type="truck" route="route_S_turn_left" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="S1_right_truck" type="truck" route="route_S_turn_right" begin="0" end="3600" vehsPerHour="28"/>
+    <flow id="S1_straight_motor" type="motorcycle" route="route_SN" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="S1_left_motor" type="motorcycle" route="route_S_turn_left" begin="0" end="3600" vehsPerHour="124"/>
+    <flow id="S1_right_motor" type="motorcycle" route="route_S_turn_right" begin="0" end="3600" vehsPerHour="124"/>
+</routes>

@@ -2,10 +2,18 @@
 <configuration>
     <input>
         <net-file value="cross.net.xml"/>
-        <route-files value="cross.rou.xml"/>
+        <route-files value="cross.rou_kb1.xml"/>
     </input>
     <time>
         <begin value="0"/>
-        <end value="1000"/>
+        <end value="3600"/>
     </time>
+    
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
 </configuration>
