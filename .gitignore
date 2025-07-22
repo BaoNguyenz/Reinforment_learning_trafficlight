@@ -2,7 +2,7 @@ rat
 __pycache__
 dqn_traffic_project_document
 tensorflow_gpu_test.ipynb
-models
+models\okee
 ploting_results\tensorflow_gpu_test.ipynb
 sumo_files\1 lane
 sumo_files\2 lane
